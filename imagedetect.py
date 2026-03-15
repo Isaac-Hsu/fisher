@@ -234,7 +234,6 @@ def visualize_detections(processed_image, detections, output_path="detections.pn
         
         # Draw label
         label = f"{fish_name}" #{confidence:.2f}"
-        cv2.putText(output, label, (x1 + 5, y1 + 25),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
+        cv2.putText(output, label, (x1 + 5, y1 + 25), cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
     
     cv2.imwrite(output_path, output) 
